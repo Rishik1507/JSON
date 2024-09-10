@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>CallBack</h2>
+    <p id="p"></p>
+    <script>
+
+        function display(sum){
+            document.getElementById("p").innerHTML=sum;
+        }
+        function add(a,b,myCallback){
+            let res=a+b
+            myCallback(res);
+
+            
+        }
+        add(56,90,display)
+
+    </script>
+</body>
+</html>
